@@ -33,6 +33,7 @@ class GpaCalculator {
                     "Enter your score for " + courseName + " " + courseCode + ": ", 0, 100);
             int creditHours = InputValidator.getValidIntegerInput(scanner,
                     "Enter credit hours for " + courseName + " " + courseCode + ": ", 1, Integer.MAX_VALUE);
+            scanner.nextLine();
 
             courses[i] = new Course(courseName, courseScore, creditHours);
             courseCodes[i] = courseName + " " + courseCode;
